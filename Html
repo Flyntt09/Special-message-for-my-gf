@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💌 Special Message for You 💌</title>
+    <script>
+        let messages = [
+            "Hi love! ❤️",
+            "Just a little surprise to make you smile 😊",
+            "You are the best thing in my life 💖",
+            "I appreciate you every single day 🥰",
+            "I love you so much! 😘"
+        ];
+        let index = 0;
+
+        function showMessage() {
+            if (index < messages.length) {
+                alert(messages[index]); 
+                index++;
+                setTimeout(showMessage, 500); // Show next message after clicking OK
+            }
+        }
+
+        window.onload = function() {
+            setTimeout(showMessage, 1000); // Start messages 1 second after opening
+        };
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            background-color: #ffe4e1;
+        }
+        h1 {
+            color: #d63384;
+        }
+    </style>
+</head>
+<body>
+    <h1>💌 Tap to Open Your Surprise! 💌</h1>
+    <p>Download and open this file in Chrome or any browser.</p>
+</body>
+</html>
